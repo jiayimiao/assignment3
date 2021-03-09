@@ -1,0 +1,23 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+img {
+  width: 50px;
+}
+
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding: 11px;
+}
+
+.even {
+  background-color: bisque;
+}
+
+.odd {
+  background-color: cadetblue;
+}

@@ -1,0 +1,20 @@
+
+<h1>Welcome!</h1>
+<p><%=@time %></p>
+
+
+
+<table border="1">
+  <tr style="background-color: chocolate">
+    <th>Image</th>
+    <th>Name</th>
+    <th></th>
+  </tr>
+  <% @drinks.each do |drink| %>
+  <tr class="<%= cycle('even','odd') %>">
+    <td><%= image_tag(drink['image_url']) %></td>
+    <td><%= drink['name'] %></td>
+    <td><%= link_to 'Details', index_details_path%></td>
+  </tr>
+<%end %>
+</table>
